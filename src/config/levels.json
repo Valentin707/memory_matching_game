@@ -1,0 +1,5 @@
+[
+  { "value": "easy", "class": "grid-4", "cards": 8 },
+  { "value": "medium", "class": "grid-6", "cards": 12 },
+  { "value": "hard", "class": "grid-8", "cards": 16 }
+]

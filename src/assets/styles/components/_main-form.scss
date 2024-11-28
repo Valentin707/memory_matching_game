@@ -1,0 +1,23 @@
+.main-form {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-title {
+    font-size: var(--font-size-xl);
+    line-height: var(--spacing-3xl);
+    font-style: italic;
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xs);
+  }
+}
+

@@ -1,0 +1,63 @@
+// General page breakpoint
+$media-breakpoint-largest: 90rem;
+$media-breakpoint-large: 83.75rem;
+$media-breakpoint-medium: 74rem;
+$media-breakpoint-regular: 69rem;
+$media-breakpoint-small: 66.25rem;
+$media-breakpoint-mobile: 60rem;
+
+
+// Global settings reside.
+:root {
+    // Colors
+    --color-primary: rgba(255, 255, 255, 0.2);
+    --color-primary-light: rgba(255, 255, 255, 0.3);
+    --color-accent: #008000;
+    --color-accent-light: #00bd00;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    // Layout
+    --site-width-large: #{$media-breakpoint-large - 2};
+    --site-width-medium: #{$media-breakpoint-medium - 2};
+    --site-width-small: #{$media-breakpoint-small - 2};
+    --site-width-mobile: #{$media-breakpoint-mobile - 2};
+
+    // Typography
+    // ---------------------------------------------------------------------
+
+
+    //Default heading font-size
+    --font-size-h2: 3rem;
+    --font-size-h3: 2rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+    --font-size-h6: 1rem;
+
+    //Default text font-size
+    --font-size-3xs: 0.625rem;
+    --font-size-2xs: 0.75rem;
+    --font-size-xs: 0.875rem;
+    --font-size-s: 1rem;
+    --font-size-m: 1.125rem;
+    --font-size-l: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 1.75rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2rem;
+
+    //Default spacing
+    --spacing-3xs: 0.625rem;
+    --spacing-2xs: 0.75rem;
+    --spacing-xs: 0.875rem;
+    --spacing-s: 1rem;
+    --spacing-m: 1.125rem;
+    --spacing-l: 1.25rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 1.75rem;
+    --spacing-3xl: 1.875rem;
+    --spacing-4xl: 2rem;
+}
+
+

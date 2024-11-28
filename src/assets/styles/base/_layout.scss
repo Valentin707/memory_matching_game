@@ -1,0 +1,41 @@
+@use 'settings' as settings;
+
+.row {
+    --row-max-width: var(--site-width-large);
+    --row-max-width-alternative: var(--row-max-width);
+    max-width: var(--row-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    width: 100%;
+
+
+    // And here, we have an adaptive version:
+    @media (max-width: #{settings.$media-breakpoint-large}) {
+        max-width: Min(var(--site-width-medium), var(--row-max-width));
+    }
+
+    @media (max-width: #{settings.$media-breakpoint-medium}) {
+        max-width: Min(var(--site-width-regular), var(--row-max-width));
+    }
+
+    @media (max-width: #{settings.$media-breakpoint-regular}) {
+        max-width: Min(var(--site-width-small), var(--row-max-width));
+    }
+
+    @media (max-width: #{settings.$media-breakpoint-small}) {
+        max-width: Min(var(--site-width-mobile), var(--row-max-width));
+    }
+
+    @media (max-width: #{settings.$media-breakpoint-mobile}) {
+        max-width: calc(100% - 2.5rem);
+        padding: 0;
+    }
+}
+
+.row-fullwidth {
+    max-width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
